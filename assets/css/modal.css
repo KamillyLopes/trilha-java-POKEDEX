@@ -1,0 +1,235 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 2; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+}
+
+.close {
+  color: rgb(255, 255, 255);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(66, 66, 66);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.infos-modal{
+  display: flex;
+  flex-direction: column;
+}
+
+.stats-modal{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin: 2rem;
+  justify-content: space-around;
+}
+
+.stats-modal li{
+  border-radius: 0.5rem;
+}
+
+li, h3, p, label{
+  color: #fff;
+  list-style:none;
+}
+
+p {
+  font-size: 13px;
+}
+
+input, section {
+  clear: both;
+  padding-top: 10px;
+  display: none;
+}
+
+label {
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+  float: left;
+  padding: 10px 30px;
+  border-top: 2px solid transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid #DDD;
+}
+
+label:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4 {
+  display: block;
+}
+
+input:checked + label {
+  border-top-color: #ffffff;
+  border-right-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-bottom-color: transparent;
+  text-decoration: none;
+}
+
+.tab-modal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+progress[value]::-webkit-progress-bar {background-color: #fff;}
+
+progress[value]::-webkit-progress-value {background-color: #fff;}
+
+progress::-webkit-progress-bar {background-color: #fff; width: 100%;}
+progress {background-color: #fff;}
+
+/* value: */
+progress::-webkit-progress-value {background-color: var(--progressColor) !important;}
+progress::-moz-progress-bar {background-color: var(--progressColor) !important;}
+progress {color: var(--progressColor);}
+
+.stats-progress{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.stat-name{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-hp{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movimentos-modal{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grass-modal {
+  background-color: #22b92a;
+}
+
+.fire-modal {
+  background-color: #d86310;
+}
+
+.water-modal {
+  background-color: #365fbe;
+}
+
+.electric-modal {
+  background-color: #b69100;
+}
+
+.ice-modal {
+  background-color: #3cc1c5;
+}
+
+.ground-modal {
+  background-color: #b38813;
+}
+
+.flying-modal {
+  background-color: #341e6e;
+}
+
+.poison-modal {
+  background-color: #ec1cec;
+}
+
+.fighting-modal {
+  background-color: rgb(124, 6, 0);
+}
+
+.psychic-modal {
+  background-color: #3d101d;
+}
+
+.dark-modal {
+  background-color: #614029;
+}
+
+.rock-modal {
+  background-color: #695c1f;
+}
+
+.bug-modal {
+  background-color: #585f1a;
+}
+
+.ghost-modal {
+  background-color: #341769;
+}
+
+.steel-modal {
+  background-color: #3d3c47;
+}
+
+.dragon-modal {
+  background-color: #2b0c79;
+}
+
+.fairy-modal {
+  background-color: #994d67;
+}
+
+.modal-content {
+  margin: 15% auto; 
+}
+
+.cidades{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 380px) {
+  .modal-content {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .modal-content {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .modal-content {
+    width: 40%;
+  }
+}
